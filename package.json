@@ -1,0 +1,17 @@
+{
+  "name": "shega",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd server && npx ts-node src/app.ts\" \"cd frontend && npm run build && npm run start\"",
+    "install": "concurrently \"cd server && npm install\" \"cd frontend && npm install\"",
+    "start-server": "npx ts-node src/app.ts",
+    "start-front": "npm run start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
